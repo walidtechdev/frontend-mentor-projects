@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Figtree:wght@300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Frontend Mentor | Blog preview card</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        background-color: #f4d04e;
+        min-height: 100vh;
+        width: 100%;
+        gap: 20px;
+        flex-direction: column;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0 24px;
+      }
+      .container {
+        background-color: #ffffff;
+        width: 384px;
+        box-shadow: 0 0 0 1.2px #000000, 8px 8px 0px #000000;
+        border-radius: 20px;
+        display: flex;
+        flex-direction: column;
+        font-family: 'Figtree';
+        padding: 24px;
+        gap: 24px;
+      }
+      .blog-image {
+        border-radius: 10px;
+        height: 200px;
+        overflow: hidden;
+        width: 100%;
+      }
+      .blog-image img {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+        display: block;
+      }
+
+      .content {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        gap: 12px;
+      }
+      .category {
+        background-color: #f4d04e;
+        border-radius: 4px;
+        box-shadow: 0 0 0 1.2px #000000;
+        padding: 4px 12px;
+      }
+      .publish-date {
+        font-weight: 500;
+        color: #111111;
+        font-size: 14px;
+        line-height: 150%;
+        letter-spacing: 0px;
+      }
+      .title {
+        font-size: 24px;
+        line-height: 150%;
+        letter-spacing: 0px;
+        font-weight: 800;
+        transition: color 0.5s;
+      }
+      .description {
+        color: #6b6b6b;
+        font-size: 16px;
+        line-height: 150%;
+        letter-spacing: 0px;
+        font-weight: 500;
+      }
+
+      .text-preset-3Bold {
+        font-size: 14px;
+        line-height: 150%;
+        letter-spacing: 0%;
+        font-weight: 800;
+      }
+      .author {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+      }
+      .author img {
+        height: 32px;
+        width: 32px;
+      }
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+      .title:hover {
+        color: #f4d04e;
+      }
+
+      @media screen and (max-width: 375px) {
+        body {
+          padding: 0 24px;
+        }
+        .container {
+          width: 100%;
+          max-width: 327px;
+          height: auto;
+          min-height: 501px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <figure class="blog-image">
+        <img
+          src="assets/images/illustration-article.svg"
+          alt="Image of the illustration"
+        />
+      </figure>
+      <div class="content">
+        <span class="category text-preset-3Bold">Learning</span>
+        <p class="publish-date">Published 21 Dec 2023</p>
+        <h1 class="title">HTML & CSS foundations</h1>
+        <p class="description">
+          These languages are the backbone of every website, defining structure,
+          content, and presentation.
+        </p>
+      </div>
+      <figure class="author">
+        <img
+          src="assets/images/image-avatar.webp"
+          alt="avatar image of Greg Hooper"
+        />
+        <figcaption class="text-preset-3Bold">Greg Hooper</figcaption>
+      </figure>
+    </div>
+
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">
+        Frontend Mentor
+      </a>
+      . Coded by
+      <a href="https://github.com/walidtechdev" target="_blank">walidtechdev</a>
+      .
+    </div>
+  </body>
+</html>

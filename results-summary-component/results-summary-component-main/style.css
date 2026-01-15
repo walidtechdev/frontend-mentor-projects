@@ -1,0 +1,89 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.result_content {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+  padding: 32px 57.5px;
+  border-radius: 0px 0px 32px 32px;
+
+  background: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+  color: white;
+}
+.result_score {
+  background: linear-gradient(hsl(256, 71%, 46%), hsl(241, 72%, 46%));
+  border-radius: 50%;
+  width: 140px;
+  height: 140px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.result_text {
+  margin-top: 8px;
+}
+
+.summary {
+  padding: 24px 30px 30px;
+  width: 315px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+tbody {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+svg {
+  position: relative;
+  top: 4px;
+}
+
+.summary_table {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+  padding: 17.5px 16px;
+  border-radius: 12px;
+  align-items: center;
+}
+.summary_table-1 {
+  background-color: hsl(0, 100%, 98%);
+}
+.summary_table-2 {
+  background-color: hsl(38, 100%, 98%);
+}
+.summary_table-3 {
+  background-color: hsl(162, 63%, 97%);
+}
+.summary_table-4 {
+  background-color: hsl(234, 71%, 97%);
+}
+.summary_btn {
+  align-self: center;
+}
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}

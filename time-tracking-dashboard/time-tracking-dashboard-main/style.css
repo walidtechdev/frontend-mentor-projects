@@ -1,0 +1,266 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  background: hsl(226, 43%, 10%);
+  color: white;
+  font-family: "Rubik";
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  padding: 80px 24px;
+}
+.card__profile {
+  height: 133px;
+  position: relative;
+  background: hsl(246, 80%, 60%);
+  border-radius: 15px;
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  padding: 32px;
+  z-index: 2;
+}
+.card__info {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.card__text {
+  color: hsl(236, 100%, 87%);
+  font-size: 15px;
+  line-height: 18px;
+}
+.card__name {
+  font-weight: 200;
+  font-size: 24px;
+  line-height: 28px;
+}
+.card__period {
+  background: hsl(235, 46%, 20%);
+  padding: 28px 0;
+  position: relative;
+  border-radius: 0 0 15px 15px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  transform: translateY(-5px);
+  z-index: 1;
+}
+.card__period button {
+  background: none;
+  border: none;
+  color: hsl(235, 45%, 61%);
+  font-size: 18px;
+  cursor: pointer;
+  text-align: left;
+  font-family: inherit;
+}
+
+.card__period button:hover {
+  color: white;
+}
+.card__img {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  border: 2px solid white;
+}
+.card-container {
+  position: relative;
+  height: 160px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+.overlaying {
+  position: absolute;
+
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  border-radius: 15px 15px 50px 50px;
+}
+
+.overlaying--work {
+  background: hsl(15, 100%, 70%);
+  background-image: url("images/icon-work.svg");
+  background-repeat: no-repeat;
+  background-position: 95% -10px;
+}
+.overlaying--play {
+  background: hsl(195, 74%, 62%);
+  background-image: url("images/icon-play.svg");
+  background-repeat: no-repeat;
+  background-position: 95% -10px;
+}
+.overlaying--study {
+  background: hsl(348, 100%, 68%);
+  background-image: url("images/icon-study.svg");
+  background-repeat: no-repeat;
+  background-position: 95% -10px;
+}
+.overlaying--exercise {
+  background: hsl(145, 58%, 55%);
+  background-image: url("images/icon-exercise.svg");
+  background-repeat: no-repeat;
+  background-position: 95% -2px;
+}
+.overlaying--social {
+  background: hsl(264, 64%, 52%);
+  background-image: url("images/icon-social.svg");
+  background-repeat: no-repeat;
+  background-position: 95% -10px;
+}
+.overlaying--selfcare {
+  background: hsl(43, 84%, 65%);
+  background-image: url("images/icon-self-care.svg");
+  background-repeat: no-repeat;
+  background-position: 95% -10px;
+}
+
+.activity-card {
+  position: relative;
+  background: hsl(235, 46%, 20%);
+  border-radius: 15px;
+  height: 76%;
+  padding: 24px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  row-gap: 8px;
+  z-index: 2;
+}
+
+.activity-card img {
+  grid-column: 2 / 3;
+  grid-row: 1 / 2;
+  justify-self: end;
+}
+
+.activity-card h2 {
+  grid-column: 1 / 2;
+  grid-row: 1 / 2;
+  font-size: 18px;
+}
+
+.activity-card p:nth-last-of-type(2) {
+  font-size: 32px;
+}
+.activity-card p:last-child {
+  justify-self: end;
+  font-size: 15px;
+  color: hsl(236, 100%, 87%);
+}
+#card__tracker {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+@media (min-width: 768px) {
+  body {
+    align-items: center;
+    padding: 174px 80px;
+  }
+  .card {
+    width: 100%;
+    max-width: 612px;
+  }
+  .card__period {
+    justify-content: center;
+    gap: 120px;
+  }
+  #card__tracker {
+    display: grid;
+    grid-template: repeat(2, 1fr) / repeat(3, 1fr);
+    gap: 24px;
+    max-width: 612px;
+  }
+
+  .card-container {
+    height: 213px;
+  }
+  .activity-card {
+    width: 188px;
+    height: 180px;
+
+    grid-template: repeat(3, 1fr) / repeat(2, 1fr);
+  }
+  .activity-card p:last-child {
+    grid-area: 3 / 1 / 4 / 3;
+    justify-self: start;
+  }
+  .activity-card p:nth-last-of-type(2) {
+    font-size: 56px;
+    grid-area: 2 / 1 / 3 / 3;
+  }
+}
+
+@media (min-width: 1024px) {
+  body {
+    display: grid;
+    grid-template: repeat(2, 1fr) / repeat(2, auto 1fr);
+    gap: 32px;
+  }
+  .attribution {
+    grid-area: 2 / 1 / 3 / 3;
+  }
+
+  .card {
+    width: 255px;
+    height: 100%;
+  }
+
+  .card__profile {
+    height: 354px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 40px;
+    padding: 32px;
+  }
+
+  .card__period {
+    height: 166px;
+  }
+  .card__name {
+    font-size: 40px;
+    line-height: 47px;
+  }
+  .card__img {
+    height: 78px;
+    width: 78px;
+  }
+
+  .card__period {
+    padding: 32px;
+    flex-direction: column;
+    gap: 21px;
+    align-items: flex-start;
+  }
+
+  #card__tracker {
+    height: 520px;
+  }
+
+  .card-container {
+    height: 244px;
+    width: 255px;
+  }
+  .activity-card {
+    width: 255px;
+    height: 80%;
+  }
+}

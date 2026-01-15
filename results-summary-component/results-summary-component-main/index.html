@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+    <script defer src="script.js"></script>
+    <title>Frontend Mentor | Results summary component</title>
+  </head>
+  <body>
+    <article class="container">
+      <div class="result_content">
+        <p class="result_title">Your Result</p>
+        <div class="result_score">76 of 100</div>
+        <div class="result_feedback">
+          <p class="result_opinion">Great</p>
+          <p class="result_text">
+            You scored higher than 65% of the people who have taken these tests.
+          </p>
+        </div>
+      </div>
+
+      <div class="summary">
+        <p class="summary_title">Summary</p>
+        <table>
+          <tr class="summary_table summary_table-1">
+            <td class="tr_1">
+              <svg
+                width="20"
+                height="20"
+                viewBox="0 0 20 20"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M10.8333 8.33333V2.5L4.16663 11.6667H9.16663V17.5L15.8333 8.33333H10.8333Z"
+                  stroke="#FF5555"
+                  stroke-width="1.25"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+              <span class="table_title table_title-red">Reaction</span>
+            </td>
+            <td>
+              <span class="summary_score">80</span>
+              /100
+            </td>
+          </tr>
+          <tr class="summary_table summary_table-2">
+            <td class="tr_2">
+              <svg
+                width="20"
+                height="20"
+                viewBox="0 0 20 20"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M5.83331 11.6667C5.46955 11.6672 5.11029 11.7471 4.7806 11.9008C4.45091 12.0546 4.15874 12.2784 3.92447 12.5567C3.69021 12.8349 3.5195 13.161 3.42425 13.5121C3.32901 13.8631 3.31152 14.2308 3.37302 14.5893C3.43452 14.9478 3.57351 15.2886 3.78031 15.5879C3.9871 15.8871 4.25672 16.1377 4.57033 16.322C4.88394 16.5063 5.234 16.62 5.59607 16.655C5.95814 16.6901 6.32349 16.6457 6.66665 16.525"
+                  stroke="#FFB21E"
+                  stroke-width="1.25"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M3.5533 13.0042C3.0546 12.7641 2.62354 12.4036 2.29901 11.9552C1.97448 11.5069 1.76671 10.9848 1.69443 10.436C1.62216 9.88727 1.68767 9.32917 1.88504 8.81208C2.08241 8.29498 2.40544 7.83518 2.82497 7.47415M2.84997 7.40665C2.57667 6.99769 2.45689 6.50522 2.51182 6.01643C2.56675 5.52763 2.79286 5.07404 3.15012 4.73594C3.50737 4.39785 3.97273 4.19706 4.46381 4.16913C4.95489 4.14119 5.44001 4.28792 5.8333 4.58332M6.03164 4.63749C5.8987 4.35502 5.83094 4.04629 5.83337 3.73412C5.83579 3.42195 5.90835 3.11431 6.04566 2.83395C6.18298 2.55359 6.38155 2.30767 6.62669 2.11438C6.87183 1.92108 7.15728 1.78535 7.46194 1.71722C7.7666 1.64908 8.08267 1.65029 8.3868 1.72074C8.69093 1.79119 8.97533 1.92909 9.219 2.12425C9.46266 2.3194 9.65935 2.56683 9.79453 2.84822C9.92971 3.12962 9.99992 3.4378 9.99997 3.74999V16.6667C9.99997 17.1087 9.82437 17.5326 9.51181 17.8452C9.19925 18.1577 8.77533 18.3333 8.3333 18.3333C7.89127 18.3333 7.46735 18.1577 7.15479 17.8452C6.84223 17.5326 6.66664 17.1087 6.66664 16.6667M9.99997 5.83332C9.99997 6.49636 10.2634 7.13224 10.7322 7.60109C11.201 8.06993 11.8369 8.33332 12.5 8.33332M14.1666 11.6667C14.5304 11.6672 14.8897 11.7471 15.2193 11.9008C15.549 12.0545 15.8412 12.2784 16.0755 12.5566C16.3097 12.8349 16.4804 13.161 16.5757 13.5121C16.6709 13.8631 16.6884 14.2308 16.6269 14.5893C16.5654 14.9478 16.4264 15.2886 16.2196 15.5879C16.0128 15.8871 15.7432 16.1377 15.4296 16.322C15.116 16.5063 14.7659 16.6199 14.4039 16.655C14.0418 16.6901 13.6765 16.6457 13.3333 16.525"
+                  stroke="#FFB21E"
+                  stroke-width="1.25"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M16.4467 13.0042C16.9454 12.7641 17.3764 12.4036 17.701 11.9552C18.0255 11.5069 18.2333 10.9848 18.3055 10.436C18.3778 9.88727 18.3123 9.32917 18.1149 8.81208C17.9176 8.29498 17.5945 7.83518 17.175 7.47415M17.15 7.40665C17.4233 6.99769 17.5431 6.50522 17.4881 6.01643C17.4332 5.52763 17.2071 5.07404 16.8499 4.73594C16.4926 4.39785 16.0272 4.19706 15.5362 4.16913C15.0451 4.14119 14.56 4.28792 14.1667 4.58332M10 3.74999C10.0001 3.4378 10.0703 3.12962 10.2054 2.84822C10.3406 2.56683 10.5373 2.3194 10.781 2.12425C11.0246 1.92909 11.309 1.79119 11.6132 1.72074C11.9173 1.65029 12.2334 1.64908 12.538 1.71722C12.8427 1.78535 13.1281 1.92108 13.3733 2.11438C13.6184 2.30767 13.817 2.55359 13.9543 2.83395C14.0916 3.11431 14.1642 3.42195 14.1666 3.73412C14.169 4.04629 14.1013 4.35502 13.9683 4.63749M13.3333 16.6667C13.3333 17.1087 13.1577 17.5326 12.8452 17.8452C12.5326 18.1577 12.1087 18.3333 11.6667 18.3333C11.2246 18.3333 10.8007 18.1577 10.4882 17.8452C10.1756 17.5326 10 17.1087 10 16.6667"
+                  stroke="#FFB21E"
+                  stroke-width="1.25"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+              <span class="table_title table_title-yellow">Memory</span>
+            </td>
+            <td>
+              <span class="summary_score">92</span>
+              /100
+            </td>
+          </tr>
+          <tr class="summary_table summary_table-3">
+            <td class="tr_3">
+              <svg
+                width="20"
+                height="20"
+                viewBox="0 0 20 20"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M7.49996 9.99999H12.5M9.99996 18.3333C14.6025 18.3333 18.3333 14.6025 18.3333 9.99999C18.3333 5.39749 14.6025 1.66666 9.99996 1.66666C5.39746 1.66666 1.66663 5.39749 1.66663 9.99999C1.66663 11.5175 2.07246 12.9417 2.78163 14.1667L2.08329 17.9167L5.83329 17.2183C7.09958 17.9509 8.53705 18.3355 9.99996 18.3333Z"
+                  stroke="#00BB8F"
+                  stroke-width="1.25"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+              <span class="table_title table_title-green">Verbal</span>
+            </td>
+            <td>
+              <span class="summary_score">61</span>
+              /100
+            </td>
+          </tr>
+          <tr class="summary_table summary_table-4">
+            <td class="tr_4">
+              <svg
+                width="20"
+                height="20"
+                viewBox="0 0 20 20"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M10 11.6667C10.4421 11.6667 10.866 11.4911 11.1786 11.1785C11.4911 10.8659 11.6667 10.442 11.6667 9.99999C11.6667 9.55797 11.4911 9.13404 11.1786 8.82148C10.866 8.50892 10.4421 8.33333 10 8.33333C9.55801 8.33333 9.13409 8.50892 8.82153 8.82148C8.50897 9.13404 8.33337 9.55797 8.33337 9.99999C8.33337 10.442 8.50897 10.8659 8.82153 11.1785C9.13409 11.4911 9.55801 11.6667 10 11.6667Z"
+                  stroke="#1125D6"
+                  stroke-width="1.25"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M17.5 10C15.9258 12.4925 13.0983 15 10 15C6.90167 15 4.07417 12.4925 2.5 10C4.41583 7.63167 6.66 5 10 5C13.34 5 15.5842 7.63167 17.5 10Z"
+                  stroke="#1125D6"
+                  stroke-width="1.25"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+              <span class="table_title table_title-blue">Visual</span>
+            </td>
+            <td>
+              <span class="summary_score">73</span>
+              /100
+            </td>
+          </tr>
+        </table>
+        <button type="button" class="summary_btn">Continue</button>
+      </div>
+    </article>
+
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">
+        Frontend Mentor
+      </a>
+      . Coded by
+      <a href="#">Your Name Here</a>
+      .
+    </div>
+<br><br>
+   <form id="inscription" novalidate>
+  <input name="nom" />
+  <input name="email" type="email" />
+  <input name="age" type="number" />
+  <button type="submit">S'inscrire</button>
+</form>
+</body>
+  </body>
+</html>

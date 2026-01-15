@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+
+    <title>
+      Frontend Mentor | Newsletter sign-up form with success message
+    </title>
+
+    <link rel="stylesheet" href="style.css" />
+    <script defer src="script.js"></script>
+  </head>
+  <body>
+    <article class="card">
+      <picture>
+        <source
+          media="(min-width:1024px)"
+          srcset="assets/images/illustration-sign-up-desktop.svg"
+        />
+        <source
+          media="(min-width: 768px)"
+          srcset="assets/images/illustration-sign-up-tablet.svg"
+        />
+        <img
+          src="assets/images/illustration-sign-up-mobile.svg"
+          alt="Illustration of the sign up on mobile"
+          class="card__img"
+        />
+      </picture>
+      <div class="card__content">
+        <h1 class="card__title">Stay updated!</h1>
+        <p class="card__text">
+          Join 60,000+ product managers receiving monthly updates on:
+        </p>
+        <ul class="card__list">
+          <li>
+            <img src="assets/images/icon-list.svg" alt="" />
+            Product discovery and building what matters
+          </li>
+          <li>
+            <img src="assets/images/icon-list.svg" alt="" />
+            Measuring to ensure updates are a success
+          </li>
+          <li>
+            <img src="assets/images/icon-list.svg" alt="" />
+            And much more!
+          </li>
+        </ul>
+        <form id="subscription" novalidate>
+          <div class="card__message">
+            <label for="email">Email address</label>
+            <span class="error-message hidden">Valid email required</span>
+          </div>
+          <input name="email" type="email" placeholder="email@company.com" />
+          <button type="submit" class="card__btn">
+            Subscribe to monthly newsletter
+          </button>
+        </form>
+      </div>
+    </article>
+
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">
+        Frontend Mentor
+      </a>
+      . Coded by
+      <a href="https://github.com/walidtechdev">walidtechdev</a>
+      .
+    </div>
+  </body>
+</html>
