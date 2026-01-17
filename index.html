@@ -1,0 +1,302 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Frontend Mentor Projects - Walid</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        min-height: 100vh;
+        padding: 40px 20px;
+      }
+
+      .container {
+        max-width: 1400px;
+        margin: 0 auto;
+      }
+
+      header {
+        text-align: center;
+        margin-bottom: 50px;
+        color: white;
+      }
+
+      .profile-image {
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        object-fit: cover;
+        border: 5px solid white;
+        margin-bottom: 20px;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+      }
+
+      h1 {
+        font-size: 3rem;
+        margin-bottom: 10px;
+        text-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+      }
+
+      .subtitle {
+        font-size: 1.2rem;
+        opacity: 0.9;
+      }
+
+      .projects {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+        gap: 30px;
+      }
+
+      .project-card {
+        background: white;
+        padding: 0;
+        border-radius: 15px;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+        transition:
+          transform 0.3s ease,
+          box-shadow 0.3s ease;
+        overflow: hidden;
+      }
+
+      .project-card:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 15px 40px rgba(0, 0, 0, 0.3);
+      }
+
+      .project-card img {
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+        display: block;
+      }
+
+      .project-content {
+        padding: 30px;
+      }
+
+      .project-card h3 {
+        color: #667eea;
+        font-size: 1.5rem;
+        margin-bottom: 15px;
+      }
+
+      .project-card p {
+        color: #666;
+        margin-bottom: 20px;
+        line-height: 1.6;
+      }
+
+      .project-card a {
+        display: inline-block;
+        padding: 12px 30px;
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        color: white;
+        text-decoration: none;
+        border-radius: 25px;
+        font-weight: 600;
+        transition: transform 0.2s ease;
+      }
+
+      .project-card a:hover {
+        transform: scale(1.05);
+      }
+
+      @media (max-width: 768px) {
+        h1 {
+          font-size: 2rem;
+        }
+
+        .projects {
+          grid-template-columns: 1fr;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <!-- <img src="my-profile-image.jpg" alt="Profile" class="profile-image" /> -->
+        <h1>Frontend Mentor Projects</h1>
+        <p class="subtitle">Walid Guessoum's Portfolio - Web Developer</p>
+      </header>
+
+      <div class="projects">
+        <div class="project-card">
+          <img
+            src="./time-tracking-dashboard/preview.jpg"
+            alt="Time Tracking Dashboard Preview"
+          />
+          <div class="project-content">
+            <h3>Time Tracking Dashboard</h3>
+            <p>Time tracking dashboard with interactive statistics</p>
+            <a href="./time-tracking-dashboard/" target="_blank"
+              >View Project →</a
+            >
+          </div>
+        </div>
+
+        <div class="project-card">
+          <img
+            src="./tip-calculator-app/preview.jpg"
+            alt="Tip Calculator App Preview"
+          />
+          <div class="project-content">
+            <h3>Tip Calculator App</h3>
+            <p>Interactive tip calculator with bill splitting feature</p>
+            <a href="./tip-calculator-app/" target="_blank">View Project →</a>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <img
+            src="./meet-landing-page/preview.jpg"
+            alt="Meet Landing Page Preview"
+          />
+          <div class="project-content">
+            <h3>Meet Landing Page</h3>
+            <p>Modern landing page for video conferencing application</p>
+            <a href="./meet-landing-page/" target="_blank">View Project →</a>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <img
+            src="./product-preview-card-component/design/desktop-design.jpg"
+            alt="Product Preview Card Preview"
+          />
+          <div class="project-content">
+            <h3>Product Preview Card</h3>
+            <p>Responsive e-commerce product preview card</p>
+            <a href="./product-preview-card-component/" target="_blank"
+              >View Project →</a
+            >
+          </div>
+        </div>
+
+        <div class="project-card">
+          <img
+            src="./four-card-feature-section-master/design/desktop-design.jpg"
+            alt="Four Card Feature Section Preview"
+          />
+          <div class="project-content">
+            <h3>Four Card Feature Section</h3>
+            <p>Feature presentation section with grid layout</p>
+            <a href="./four-card-feature-section-master/" target="_blank"
+              >View Project →</a
+            >
+          </div>
+        </div>
+
+        <div class="project-card">
+          <img
+            src="./qr-code-component/preview.jpg"
+            alt="QR Code Component Preview"
+          />
+          <div class="project-content">
+            <h3>QR Code Component</h3>
+            <p>Simple and elegant QR code card component</p>
+            <a href="./qr-code-component/" target="_blank">View Project →</a>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <img
+            src="./newsletter-sign-up-with-success-message/preview.jpg"
+            alt="Newsletter Sign Up Preview"
+          />
+          <div class="project-content">
+            <h3>Newsletter Sign Up</h3>
+            <p>Newsletter subscription form with success message</p>
+            <a href="./newsletter-sign-up-with-success-message/" target="_blank"
+              >View Project →</a
+            >
+          </div>
+        </div>
+
+        <div class="project-card">
+          <img
+            src="./article-preview-component/design/desktop-design.jpg"
+            alt="Article Preview Component Preview"
+          />
+          <div class="project-content">
+            <h3>Article Preview Component</h3>
+            <p>Article preview component with social sharing</p>
+            <a href="./article-preview-component/" target="_blank"
+              >View Project →</a
+            >
+          </div>
+        </div>
+
+        <div class="project-card">
+          <img
+            src="./testimonials-grid-section/preview.jpg"
+            alt="Testimonials Grid Section Preview"
+          />
+          <div class="project-content">
+            <h3>Testimonials Grid Section</h3>
+            <p>Testimonials section with responsive grid layout</p>
+            <a href="./testimonials-grid-section/" target="_blank"
+              >View Project →</a
+            >
+          </div>
+        </div>
+
+        <div class="project-card">
+          <img src="./recipe-page/preview.jpg" alt="Recipe Page Preview" />
+          <div class="project-content">
+            <h3>Recipe Page</h3>
+            <p>Cooking recipe page with detailed instructions</p>
+            <a href="./recipe-page/" target="_blank">View Project →</a>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <img
+            src="./social-links-profile/preview.jpg"
+            alt="Social Links Profile Preview"
+          />
+          <div class="project-content">
+            <h3>Social Links Profile</h3>
+            <p>Profile page with social media links</p>
+            <a href="./social-links-profile/" target="_blank">View Project →</a>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <img
+            src="./blog-preview-card/preview.jpg"
+            alt="Blog Preview Card Preview"
+          />
+          <div class="project-content">
+            <h3>Blog Preview Card</h3>
+            <p>Blog article preview card</p>
+            <a href="./blog-preview-card/" target="_blank">View Project →</a>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <img
+            src="./results-summary-component/preview.jpg"
+            alt="Results Summary Component Preview"
+          />
+          <div class="project-content">
+            <h3>Results Summary Component</h3>
+            <p>Test results summary with score breakdown</p>
+            <a href="./results-summary-component/" target="_blank"
+              >View Project →</a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
