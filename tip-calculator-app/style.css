@@ -111,10 +111,19 @@ body {
   gap: 16px;
   width: 100%;
 }
-.title {
+.manage__error {
+  display: flex;
+  justify-content: space-between;
+}
+.title,
+.error__message {
   font-size: 16px;
   color: var(--clr-title);
   font-weight: 700;
+}
+.error__message {
+  color: var(--clr-error);
+  display: none;
 }
 .input {
   background: var(--bg-input);
@@ -155,12 +164,22 @@ body {
   background: var(--bg-btn-bill-hover);
   color: var(--clr-btn-hover);
 }
-.btn:active {
+
+.btn--active {
   background: var(--bg-btn-active);
+  color: var(--clr-btn-active);
 }
+
 .btn__custom {
   background: var(--bg-btn-custom);
   color: var(--clr-btn-custom);
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  padding: 8px;
+  font-family: var(--ff-space-mono);
+  font-size: 24px;
+  font-weight: 700;
 }
 /*===Results content===*/
 .results__container {
@@ -191,8 +210,8 @@ body {
   cursor: pointer;
   font-family: var(--ff-space-mono);
   padding: 8px;
-  background: var(--bg-btn-reset);
-  color: var(--clr-btn-reset);
+  background: var(--bg-btn-reset-inactive);
+  color: var(--clr-btn-reset-inactive);
   border: none;
   font-weight: 700;
   font-size: 20px;
@@ -202,6 +221,11 @@ body {
 .btn__reset:hover {
   background: var(--bg-btn-reset-hover);
   color: var(--clr-btn-reset-hover);
+}
+
+.btn__reset--active {
+  background: var(--bg-btn-reset);
+  color: var(--clr-btn-reset);
 }
 
 .amount__person p:first-child,
