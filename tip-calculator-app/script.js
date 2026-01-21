@@ -35,8 +35,10 @@ function validateInput(event) {
 
   if (!Number.isNaN(value) && value > 0) {
     inputElement.style.border = "2px solid var(--clr-valid)";
+    error.style.display = "none";
   } else {
     inputElement.style.border = "2px solid var(--clr-error)";
+    error.style.display = "block";
   }
 }
 
