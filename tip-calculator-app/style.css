@@ -218,14 +218,13 @@ body {
   border-radius: 5px;
 }
 
-.btn__reset:hover {
-  background: var(--bg-btn-reset-hover);
-  color: var(--clr-btn-reset-hover);
-}
-
 .btn__reset--active {
   background: var(--bg-btn-reset);
   color: var(--clr-btn-reset);
+}
+.btn__reset--active:hover {
+  background: var(--bg-btn-reset-hover);
+  color: var(--clr-btn-reset-hover);
 }
 
 .amount__person p:first-child,
