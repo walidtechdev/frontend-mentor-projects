@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Password generator app</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="title">Password Generator</h1>
+      <div class="container__generation">
+        <div class="password__generation">
+          <div class="password__display">P4$5W0rD!</div>
+          <img
+            src="./assets/images/icon-copy.svg"
+            alt="icon copy"
+            class="password__copy"
+          />
+        </div>
+      </div>
+      <div class="container__settings">
+        <div class="password__settings">
+          <div class="settings__flex">
+            <div class="password__length">
+              <p class="length__title">Character Length</p>
+              <div class="length__number">0</div>
+            </div>
+            <input type="range" class="password__slider" />
+          </div>
+
+          <div class="password__checkbox">
+            <div>
+              <input type="checkbox" name="uppercase" />
+              <label for="uppercase">Include Uppercase Letters</label>
+            </div>
+            <div>
+              <input type="checkbox" name="lowercase" />
+              <label for="lowercase">Include Lowercase Letters</label>
+            </div>
+            <div>
+              <input type="checkbox" name="numbers" />
+              <label for="numbers">Include Numbers</label>
+            </div>
+            <div>
+              <input type="checkbox" name="symbols" />
+              <label for="symbols">Include Symbols</label>
+            </div>
+          </div>
+          <div class="password__footer">
+            <div class="password__strength">
+              <p class="strength__text">STRENGTH</p>
+              <div class="strength__color">
+                <div class="rectangle rectangle__one"></div>
+                <div class="rectangle rectangle__two"></div>
+                <div class="rectangle rectangle__three"></div>
+                <div class="rectangle rectangle__for"></div>
+              </div>
+            </div>
+            <button class="btn__generate">
+              GENERATE
+              <img src="./assets/images/icon-arrow-right.svg" alt="" />
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
