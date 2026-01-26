@@ -10,6 +10,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="style.css" />
+    <script defer src="script.js"></script>
     <link
       rel="icon"
       type="image/png"
@@ -39,24 +40,24 @@
               <p class="length__title">Character Length</p>
               <div class="length__number">0</div>
             </div>
-            <input type="range" class="password__slider" />
+            <input type="range" class="password__slider" min="0" max="20" />
           </div>
 
           <div class="password__checkbox">
             <div>
-              <input type="checkbox" name="uppercase" />
+              <input type="checkbox" name="uppercase" class="case" />
               <label for="uppercase">Include Uppercase Letters</label>
             </div>
             <div>
-              <input type="checkbox" name="lowercase" />
+              <input type="checkbox" name="lowercase" class="case" />
               <label for="lowercase">Include Lowercase Letters</label>
             </div>
             <div>
-              <input type="checkbox" name="numbers" />
+              <input type="checkbox" name="numbers" class="case" />
               <label for="numbers">Include Numbers</label>
             </div>
             <div>
-              <input type="checkbox" name="symbols" />
+              <input type="checkbox" name="symbols" class="case" />
               <label for="symbols">Include Symbols</label>
             </div>
           </div>

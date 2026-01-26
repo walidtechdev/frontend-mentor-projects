@@ -39,6 +39,7 @@ body {
 }
 .password__copy {
   width: auto;
+  cursor: pointer;
 }
 .settings__flex {
   display: flex;
@@ -56,6 +57,7 @@ body {
 .length__number {
   font-size: 1.5rem;
   padding-right: 14px;
+  color: rgb(164, 255, 175);
 }
 .password__settings {
   padding: 16px;
@@ -88,6 +90,7 @@ body {
   background: rgb(164, 255, 175);
   font-family: "JetBrains Mono";
   font-weight: 700;
+  cursor: pointer;
 }
 .btn__generate img {
   margin-left: 8px;
@@ -100,6 +103,11 @@ body {
   font-weight: 700;
   line-height: 20px;
 }
+.password__checkbox div {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
 .strength__color {
   display: flex;
   gap: 8px;
@@ -108,6 +116,36 @@ body {
   border: 2px solid white;
   width: 10px;
   height: 28px;
+}
+
+.password__slider {
+  appearance: none;
+  background: rgb(24, 23, 31);
+  height: 8px;
+  outline: none;
+}
+.password__slider::-webkit-slider-thumb {
+  appearance: none;
+  background: white;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.case {
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  border: 2px solid white;
+  cursor: pointer;
+}
+
+.case--active {
+  background-image: url("./assets/images/icon-check.svg");
+  background-position: center;
+  background-color: rgb(164, 255, 175);
+  background-repeat: no-repeat;
+  border: none;
 }
 
 @media (min-width: 768px) {
@@ -138,5 +176,8 @@ body {
   }
   .length__number {
     padding: 0;
+  }
+  .settings__flex {
+    gap: 16px;
   }
 }
