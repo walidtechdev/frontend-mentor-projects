@@ -39,26 +39,42 @@
           <div class="settings__flex">
             <div class="password__length">
               <p class="length__title">Character Length</p>
-              <div class="length__number">0</div>
+              <div class="length__number">10</div>
             </div>
-            <input type="range" class="password__slider" min="0" max="20" />
+            <input
+              type="range"
+              class="password__slider"
+              min="1"
+              max="20"
+              value="10"
+            />
           </div>
 
           <div class="password__checkbox">
             <div>
-              <input type="checkbox" name="uppercase" class="case uppercase" />
+              <input
+                type="checkbox"
+                name="uppercase"
+                class="case"
+                id="uppercase"
+              />
               <label for="uppercase">Include Uppercase Letters</label>
             </div>
             <div>
-              <input type="checkbox" name="lowercase" class="case lowercase" />
+              <input
+                type="checkbox"
+                name="lowercase"
+                class="case"
+                id="lowercase"
+              />
               <label for="lowercase">Include Lowercase Letters</label>
             </div>
             <div>
-              <input type="checkbox" name="numbers" class="case numbers" />
+              <input type="checkbox" name="numbers" class="case" id="numbers" />
               <label for="numbers">Include Numbers</label>
             </div>
             <div>
-              <input type="checkbox" name="symbols" class="case symbols" />
+              <input type="checkbox" name="symbols" class="case" id="symbols" />
               <label for="symbols">Include Symbols</label>
             </div>
           </div>
@@ -69,7 +85,7 @@
                 <div class="rectangle rectangle__one"></div>
                 <div class="rectangle rectangle__two"></div>
                 <div class="rectangle rectangle__three"></div>
-                <div class="rectangle rectangle__for"></div>
+                <div class="rectangle rectangle__four"></div>
               </div>
             </div>
             <button class="btn__generate">
