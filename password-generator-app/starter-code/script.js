@@ -5,6 +5,8 @@ const copyButton = document.querySelector(".password__copy");
 const passwordDisplay = document.querySelector(".password__display");
 const btnGenerate = document.querySelector(".btn__generate");
 const strengthBars = document.querySelectorAll(".rectangle");
+const copiedText = document.querySelector(".copied-text");
+const strengthLevel = document.querySelector(".strength__level");
 
 const UPPERCASE = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 const LOWERCASE = "abcdefghijklmnopqrstuvwxyz";
@@ -33,7 +35,15 @@ function checkboxColor() {
 function copyPaste() {
   copyButton.addEventListener("click", () => {
     const copy = passwordDisplay.textContent;
-    navigator.clipboard.writeText(copy);
+    navigator.clipboard.writeText(copy).then(() => {
+      // Show "COPIED" text
+      copiedText.classList.add("show");
+
+      // Hide after 2 seconds
+      setTimeout(() => {
+        copiedText.classList.remove("show");
+      }, 2000);
+    });
   });
 }
 
@@ -110,20 +120,28 @@ function updateStrengthIndicator(strength) {
 
   let barsToFill = 0;
   let color = "";
+  let strengthText = "";
 
   if (strength === "weak") {
     barsToFill = 1;
     color = "#F64A4A";
+    strengthText = "WEAK";
   } else if (strength === "medium") {
     barsToFill = 2;
     color = "#FB7C58";
+    strengthText = "MEDIUM";
   } else if (strength === "strong") {
     barsToFill = 3;
     color = "#F8CD65";
+    strengthText = "STRONG";
   } else if (strength === "very-strong") {
     barsToFill = 4;
     color = "#A4FFAF";
+    strengthText = "VERY STRONG";
   }
+
+  // Update strength text
+  strengthLevel.textContent = strengthText;
 
   // Fill bars based on strength
   for (let i = 0; i < barsToFill; i++) {
@@ -148,6 +166,7 @@ btnGenerate.addEventListener("click", () => {
   const strength = calculateStrength(password, checkedCount);
 
   passwordDisplay.textContent = password;
+  passwordDisplay.style.color = "rgb(230, 229, 234)";
   updateStrengthIndicator(strength);
 });
 

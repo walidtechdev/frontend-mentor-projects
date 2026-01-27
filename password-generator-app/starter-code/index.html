@@ -27,11 +27,14 @@
       <div class="container__generation">
         <div class="password__generation">
           <div class="password__display">P4$5W0rD!</div>
-          <img
-            src="./assets/images/icon-copy.svg"
-            alt="icon copy"
-            class="password__copy"
-          />
+          <div class="copy-container">
+            <span class="copied-text">COPIED</span>
+            <img
+              src="./assets/images/icon-copy.svg"
+              alt="icon copy"
+              class="password__copy"
+            />
+          </div>
         </div>
       </div>
       <div class="container__settings">
@@ -81,11 +84,14 @@
           <div class="password__footer">
             <div class="password__strength">
               <p class="strength__text">STRENGTH</p>
-              <div class="strength__color">
-                <div class="rectangle rectangle__one"></div>
-                <div class="rectangle rectangle__two"></div>
-                <div class="rectangle rectangle__three"></div>
-                <div class="rectangle rectangle__four"></div>
+              <div class="strength__indicator">
+                <span class="strength__level"></span>
+                <div class="strength__color">
+                  <div class="rectangle rectangle__one"></div>
+                  <div class="rectangle rectangle__two"></div>
+                  <div class="rectangle rectangle__three"></div>
+                  <div class="rectangle rectangle__four"></div>
+                </div>
               </div>
             </div>
             <button class="btn__generate">

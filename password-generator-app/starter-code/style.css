@@ -34,9 +34,28 @@ body {
 }
 .password__display {
   font-size: 1.5rem;
-  color: rgb(84, 83, 91);
+  color: rgb(230, 229, 234);
   font-weight: 700;
 }
+
+.copy-container {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.copied-text {
+  color: rgb(164, 255, 175);
+  font-size: 1.125rem;
+  font-weight: 700;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.copied-text.show {
+  opacity: 1;
+}
+
 .password__copy {
   width: auto;
   cursor: pointer;
@@ -85,12 +104,26 @@ body {
   font-weight: 700;
 }
 
+.strength__indicator {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.strength__level {
+  color: rgb(230, 229, 234);
+  font-size: 1.125rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
 .btn__generate {
   padding: 16px;
   background: rgb(164, 255, 175);
   font-family: "JetBrains Mono";
   font-weight: 700;
   cursor: pointer;
+  border: none;
 }
 .btn__generate img {
   margin-left: 8px;
@@ -116,6 +149,7 @@ body {
   border: 2px solid white;
   width: 10px;
   height: 28px;
+  transition: background-color 0.3s ease;
 }
 
 .password__slider {
