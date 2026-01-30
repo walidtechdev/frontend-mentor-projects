@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="index.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Frontend quiz app</title>
+  </head>
+  <body>
+    <header class="header">
+      <img
+        src="assets/images/icon-sun-dark.svg"
+        alt="icon light mode"
+        class="shift__icon"
+      />
+      <label class="switch">
+        <input type="checkbox" id="theme-toggle" />
+        <span class="slider"></span>
+      </label>
+      <img
+        src="assets/images/icon-moon-dark.svg"
+        alt="icon night mode"
+        class="shift__icon"
+      />
+    </header>
+    <main>
+      <div class="title__section">
+        <h1 class="title">
+          Welcome to the <br /><span class="bold">Frontend Quiz!</span>
+        </h1>
+        <p class="subtitle">Pick a subject to get started.</p>
+      </div>
+      <div class="subject__list">
+        <div class="subject__selection">
+          <img
+            src="assets/images/icon-html.svg"
+            alt="icon html"
+            class="subject__icon subject__icon--html"
+          />
+          <h2 class="subject__title">HTML</h2>
+        </div>
+        <div class="subject__selection">
+          <img
+            src="assets/images/icon-css.svg"
+            alt="icon css"
+            class="subject__icon subject__icon--css"
+          />
+          <h2 class="subject__title">CSS</h2>
+        </div>
+        <div class="subject__selection">
+          <img
+            src="assets/images/icon-js.svg"
+            alt="icon javascript"
+            class="subject__icon subject__icon--js"
+          />
+          <h2 class="subject__title">Javascript</h2>
+        </div>
+        <div class="subject__selection">
+          <img
+            src="assets/images/icon-accessibility.svg"
+            alt="icon accessibility"
+            class="subject__icon subject__icon--accessibility"
+          />
+          <h2 class="subject__title">Accessibility</h2>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
